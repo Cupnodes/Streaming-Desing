@@ -33,6 +33,23 @@ body {
     width: 100%;
 }
 
+.col .img-container {
+    position: relative;
+}
+
+.col .img-container::after {
+    content: '';
+    position: absolute;
+    border: 30px solid #fff;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-45deg) translate(-10%, -80%);
+   
+}
+
 .col button {
     margin-top: 1rem;
 }
